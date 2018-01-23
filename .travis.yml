@@ -36,7 +36,7 @@ deploy:
     file: ${TRAVIS_BUILD_DIR}/build/com.a4pizza.raptly.pkg
     skip_cleanup: true
     on:
-      repo: a4pizza/test1
+      repo: a4pizza/raptly
       tags: true
       condition: "$TRAVIS_OS_NAME == osx"
   - provider: releases
@@ -46,7 +46,7 @@ deploy:
     file: ${TRAVIS_BUILD_DIR}/build/raptly_*.*.*_all.deb
     skip_cleanup: true
     on:
-      repo: a4pizza/test1
+      repo: a4pizza/raptly
       tags: true
       condition: "$TRAVIS_OS_NAME == linux"
 
